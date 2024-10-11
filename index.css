@@ -1,0 +1,32 @@
+img {
+  height: 200px;
+  border-radius: 40%;
+}
+p {
+  color: burlywood;
+}
+#navbar {
+  background-color: #ededed;
+}
+.navLink {
+  color: black, cursor;
+  url: ("./images/target-scope.png"), pointer;
+}
+body {
+  margin: 0px;
+  border: 10px;
+  color: black solid;
+  padding: 2px 5px;
+  cursor: url("./images/target-scope.png"), pointer;
+}
+#estimate {
+  border: 1px solid black;
+  color: #db1e1e solid;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #fd4601;
+  background-color: #ededed;
+  padding: 10px 18px;
+  cursor: url("./images/target-scope.png"), auto;
+  font-weight: 500;
+}

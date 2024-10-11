@@ -3,23 +3,46 @@
   <head>
     <title>Martin's Webpage</title>
     <meta name="description" content="this is my webpage" />
+    <style>
+      body {
+        background-color: aqua;
+      }
+      p {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-weight: 600;
+        color: yellowgreen;
+      }
+    </style>
+    <link rel="stylesheet" href="./index.css" />
   </head>
 
   <body id="top">
-    <header>
-      <nav>
-        <a href="./index.html">home</a>
-        <a href="./about.html">about</a>
-        <a href="">career</a>
-        <a href="./contact.html">contact us</a>
-      </nav>
-    </header>
+    <nav id="navbar">
+      <a class="navLink" href="./index.html">home</a>
+      <a class="navLink" href="./about.html">about</a>
+      <a class="navLink" href="">career</a>
+      <a class="navLink" href="./contact.html">contact us</a>
+      <button id="estimate">ESTIMATE A PROJECT</button>
+    </nav>
+    <nav>
+      <a href="./index.html">home</a>
+      <a href="./about.html">about</a>
+      <a href="">career</a>
+      <a href="./contact.html">contact us</a>
+    </nav>
+
     <a href="./about.html">click to go to the about page</a><br />
 
     <a target="_blank" href="https://github.com/matode20"
       >click to go to my Github Account</a
     >
-    <h1>Lorem ipsum dolor sit.</h1>
+    <h1
+      class="martin"
+      style="color: #6d0d0d; font-size: 100px; background-color: black"
+    >
+      Lorem ipsum dolor sit.
+    </h1>
     <h2>Lorem, ipsum dolor.</h2>
     <h3>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem,
@@ -42,7 +65,7 @@
       Nam, quisquam eos? Vel explicabo doloremque similique, modi perferendis
       hic alias!
     </h3>
-    <p>
+    <p style="color: red">
       Lorem ipsum <del>stoppppp</del> dolor sit amet consectetur, adipisicing
       elit. Tenetur accusantium <i>Latin</i> eaque animi incidunt! Ducimus qui
       <b>we the best</b> labore id earum libero? Harum?
