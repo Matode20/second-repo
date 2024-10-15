@@ -3,14 +3,32 @@ img {
   border-radius: 40%;
 }
 p {
-  color: burlywood;
+  color: bla;
 }
 #navbar {
-  background-color: #ededed;
+  background-color: burlywood;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border-radius: 50%;
+}
+.right {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  background-color: whitesmoke;
 }
 .navLink {
   color: black, cursor;
   url: ("./images/target-scope.png"), pointer;
+  text-decoration: none;
+  margin-left: 10px;
+  text-transform: capitalize;
 }
 body {
   margin: 0px;
@@ -20,13 +38,83 @@ body {
   cursor: url("./images/target-scope.png"), pointer;
 }
 #estimate {
-  border: 1px solid black;
-  color: #db1e1e solid;
-  padding: 10px 20px;
+  padding: 10px 20pxx solid black;
+
   border-radius: 20px;
   color: #fd4601;
   background-color: #ededed;
   padding: 10px 18px;
   cursor: url("./images/target-scope.png"), auto;
   font-weight: 500;
+}
+.box h2 {
+  color: red;
+}
+.navLink:hover {
+  text-decoration: underline;
+  font-weight: bolder;
+  color: #fd4601;
+}
+
+#estimate {
+  border: 1px solid black;
+  padding: 10px 18px;
+  font-weight: 600;
+  background-color: #ededed;
+  color: #fd4601;
+  text-transform: uppercase;
+  border-radius: 25px;
+  cursor: url("./Images/move.png"), pointer;
+}
+
+#estimate:hover {
+  background-color: black;
+  font-weight: 700;
+  color: white;
+  /* The commented out transition property has a 200ms delay meaning it would take 200ms before the transition would activate, which isn't necessary in this case. */
+  /* transition: 500ms linear 200ms; */
+
+  transition: 500ms linear;
+}
+
+/* Descendant combinator: Targets both child or grandchildren of a tag. */
+.box p {
+  color: red;
+}
+
+/* Child combinator targets only the direct children of the tag, using the > sign */
+.box > p {
+  color: blue;
+}
+
+/* Adjacent sibling selector. It's used to select an element that is the direct sibling of the specified element*/
+
+.box + p {
+  color: green;
+  font-size: larger;
+}
+
+#text {
+  text-align: left;
+  line-height: 40px;
+  word-spacing: 10px;
+  letter-spacing: 2px;
+}
+
+.cButton {
+  background-color: hsl(180, 10%, 26%);
+  padding: 10px;
+  color: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-weight: bold;
+  margin: 10px;
+  text-transform: uppercase;
+  letter-spacing: 100px;
+}
+
+.cButton:hover {
+  background-color: rgb(61, 38, 38);
+  color: cyan;
+  transition: 500ms linear;
 }
